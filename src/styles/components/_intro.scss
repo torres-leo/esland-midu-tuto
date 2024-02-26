@@ -1,0 +1,14 @@
+.intro {
+	@apply text-xl py-20;
+
+	&__content {
+		@apply max-w-[900px] w-full mx-auto;
+
+		&--title {
+			@apply text-4xl leading-[50px] font-semibold text-center text-wrap max-w-[250px] mx-auto mb-6 tracking-wide animate-fade-down animate-ease-linear;
+			@apply xs:text-5xl xs:leading-[60px] xs:max-w-[350px];
+			@apply md:mb-10;
+			@apply lg:text-6xl lg:leading-[70px] lg:max-w-fit;
+		}
+	}
+}

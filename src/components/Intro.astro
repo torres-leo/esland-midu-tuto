@@ -1,0 +1,37 @@
+---
+import SectionContainer from './SectionContainer.astro';
+---
+
+<SectionContainer customClass='intro'>
+	<img class='size-44 mb-10 m-auto animate-fade-up animate-ease-linear' src='/esland-logo.png' alt='Logo ESLAND' />
+
+	<div class='intro__content'>
+		<h1 class='intro__content--title'>
+			Bienvenidos/as<br /> a los Premios
+			<span class='text-transparent gradient font-bold animate-gradient'>ESLAND</span>
+		</h1>
+		<p>
+			El cine tiene los Oscars, la música tiene los Grammy y <strong>el streaming tiene los ESLAND</strong>. Los premios
+			que celebran la creatividad y el talento de los mejores creadores de contenido de <br />
+			<strong>la comunidad hispanohablante</strong>.
+		</p>
+
+		<p>
+			España, Latinoamérica y Andorra unidas por creadores, creadoras y sus comunidades, para recordar y revivir
+			<strong>algunos de los mejores momentos del año</strong>.
+		</p>
+
+		<p>
+			Tras dos galas celebradas, una en el Palau de la Música Catalana de Barcelona, y otra en el Auditorio Nacional de
+			la Ciudad de México, solo queda esperar a <strong>la tercera edición en Andorra</strong>.
+		</p>
+	</div>
+</SectionContainer>
+
+<style>
+	.gradient {
+		background: linear-gradient(to right, #38bdf8, #6e9ee7, #6ee7b7, #6e9ee7, #6ee7b7, #6e9ee7, #38bdf8);
+		background-clip: text;
+		background-size: 300% 300%;
+	}
+</style>

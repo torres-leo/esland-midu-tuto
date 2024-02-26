@@ -1,0 +1,14 @@
+@layer utilities {
+	p {
+		@apply text-white text-[1em] font-thin leading-[1.4] mb-[1em];
+
+		strong {
+			@apply text-white font-bold;
+		}
+	}
+
+	.section {
+		@apply container mx-auto mb-10 px-6;
+		@apply lg:px-0;
+	}
+}
