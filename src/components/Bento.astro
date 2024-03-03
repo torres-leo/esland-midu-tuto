@@ -1,0 +1,15 @@
+---
+import { BentoInfo } from '@data/BentoInfo';
+
+import SectionContainer from './SectionContainer.astro';
+import BentoItem from './BentoItem.astro';
+---
+
+<SectionContainer customClass='bento'>
+	{BentoInfo.map(({ id, content, image, subtitle, title }) => <BentoItem customClass=`bento__item--${id}` title=`${title}` subtitle=`${subtitle ?? ''}` image=`${image}`>
+
+		<Fragment slot="content" set:html={content}>
+		</Fragment>
+
+	</BentoItem>)}
+</SectionContainer>

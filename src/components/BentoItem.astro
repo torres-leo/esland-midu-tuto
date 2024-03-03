@@ -1,0 +1,40 @@
+---
+interface Props {
+	customClass?: string;
+	title?: string;
+	subtitle?: string;
+	image?: string;
+}
+
+const { customClass, title, subtitle, image } = Astro.props;
+---
+
+<article class=`bento__item ${customClass} group`>
+	<div class='bento__img' style={`background-image: url('${image}');`}></div>
+	<div class='bento__item--gradient'></div>
+
+	<div class='bento__item--info'>
+		<header>
+			<h2 class='bento__item--title'>{title}</h2>
+			{subtitle && <h3 class='bento__item--subtitle'>{subtitle}</h3>}
+		</header>
+
+		<slot name='content' />
+	</div>
+</article>
+
+<style lang='scss'>
+	.bento {
+		&__item {
+			&--1,
+			&--4 {
+				@apply col-span-10 md:col-span-4;
+			}
+
+			&--2,
+			&--3 {
+				@apply col-span-10 md:col-span-6;
+			}
+		}
+	}
+</style>

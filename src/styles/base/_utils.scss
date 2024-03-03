@@ -3,12 +3,13 @@
 		@apply text-white text-[1em] font-thin leading-[1.4] mb-[1em];
 
 		strong {
-			@apply text-white font-bold;
+			@apply text-white font-bold tracking-wide;
 		}
 	}
 
 	.section {
-		@apply container mx-auto mb-10 px-6;
-		@apply lg:px-0;
+		@apply max-w-[1300px] w-full mx-auto mb-[100px] px-6;
+		@apply xs:px-8;
+		@apply 2xl:px-0;
 	}
 }

@@ -10,8 +10,11 @@
 			"@components/*": ["components/*"],
 			"@layout/*": ["layouts/*"],
 			"@styles": ["styles.scss"],
+			"@data/*": ["data/*"],
 			"@pages/*": ["pages/*"],
-			"@icons/*": ["components/icons/*"]
+			"@models/*": ["models/*"],
+			"@icons/*": ["components/icons/*"],
+			"@svgs/*": ["assets/svgs/*"]
 		}
 	}
 }

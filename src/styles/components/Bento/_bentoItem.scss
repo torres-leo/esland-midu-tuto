@@ -1,0 +1,42 @@
+@layer components {
+	.bento {
+		@apply grid grid-cols-10 auto-rows-[30rem] gap-4 mx-auto;
+
+		&__item {
+			@apply relative col-span-5 rounded-xl backdrop-blur-md border border-black/10 shadow-inner shadow-white/20 overflow-hidden;
+
+			&--info {
+				@apply relative select-none flex flex-col gap-y-3 z-20 justify-end h-full p-6 max-w-xl;
+
+				p {
+					@apply mb-0;
+					@apply lg:text-[17px] lg:leading-6;
+				}
+			}
+
+			&--title {
+				@apply text-3xl font-semibold text-balance mb-4;
+				@apply md:text-2xl;
+				@apply lg:text-3xl;
+			}
+
+			&--subtitle {
+				@apply text-3xl font-semibold text-yellow-200/80 mb-4 w-fit;
+			}
+
+			&--gradient {
+				@apply absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent via-black/20 to-black/80;
+			}
+
+			&--2 {
+				.bento__item--info {
+					@apply lg:justify-start;
+				}
+			}
+		}
+
+		&__img {
+			@apply absolute left-0 group-hover:scale-110 bottom-0 w-full h-full  duration-1000 ease-in-out opacity-90 bg-center bg-cover bg-no-repeat -z-10 bg-blend-luminosity bg-blue-950/75;
+		}
+	}
+}

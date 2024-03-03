@@ -1,7 +1,27 @@
 ---
-
+import Logo from '@svgs/logo.astro';
 ---
 
-<header>
-	<h2>From Header</h2>
+<header class='header hidden'>
+	<div class='header__container'>
+		<div class='header__wrapper'>
+			<a href='/'><Logo class='w-12' /></a>
+
+			<nav class='header__menu'>
+				<ul class='header__links'>
+					<li class='header__links--item'>
+						<a href='/'>Info</a>
+					</li>
+					<li>
+						<a class='header__links--item' href='/'>Archivo</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a
+				class='border rounded-full inline-block border-white px-4 py-2 justify-self-end hover:bg-white/80 hover:text-black duration-300'
+				href='#'>ESLAND: EL DOCUMENTAL</a
+			>
+		</div>
+	</div>
 </header>
