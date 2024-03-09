@@ -3,7 +3,7 @@
 		@apply grid grid-cols-10 auto-rows-[30rem] gap-4 mx-auto;
 
 		&__item {
-			@apply relative col-span-5 rounded-xl backdrop-blur-md border border-black/10 shadow-inner shadow-white/20 overflow-hidden;
+			@apply relative col-span-5 rounded-xl backdrop-blur-md border border-black/10 shadow-inner shadow-white/10 overflow-hidden;
 
 			&--info {
 				@apply relative select-none flex flex-col gap-y-3 z-20 justify-end h-full p-6 max-w-xl;

@@ -8,13 +8,14 @@
 		"lib": ["ES2022", "DOM"],
 		"paths": {
 			"@components/*": ["components/*"],
-			"@layout/*": ["layouts/*"],
+			"@layout": ["layouts/Layout.astro"],
 			"@styles": ["styles.scss"],
 			"@data/*": ["data/*"],
 			"@pages/*": ["pages/*"],
 			"@models/*": ["models/*"],
 			"@icons/*": ["components/icons/*"],
-			"@svgs/*": ["assets/svgs/*"]
+			"@svgs/*": ["assets/svgs/*"],
+			"@i18n": ["i18n/index.ts"]
 		}
 	}
 }
