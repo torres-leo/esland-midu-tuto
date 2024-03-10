@@ -21,7 +21,7 @@
 			}
 
 			&--subtitle {
-				@apply text-3xl font-semibold text-yellow-200/80 mb-4 w-fit;
+				@apply text-3xl font-semibold text-yellow-200 mb-4 w-fit underline underline-offset-[5px];
 			}
 
 			&--gradient {
@@ -29,8 +29,14 @@
 			}
 
 			&--2 {
-				.bento__item--info {
-					@apply lg:justify-start;
+				.bento__item {
+					&--info {
+						@apply text-right max-w-fit;
+					}
+
+					&--subtitle {
+						@apply text-right w-full;
+					}
 				}
 			}
 		}

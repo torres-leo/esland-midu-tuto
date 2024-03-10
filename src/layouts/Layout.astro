@@ -11,10 +11,11 @@ import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 
 const { description, title } = Astro.props;
+const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang='es'>
+<html lang={currentLocale}>
 	<head>
 		<meta charset='UTF-8' />
 		<meta name='description' content={description} />
@@ -35,5 +36,21 @@ const { description, title } = Astro.props;
 	html {
 		font-family: 'Onest Variable', system-ui, sans-serif;
 		background: #151a36;
+	}
+
+	#header-nav {
+		animation: blur linear both;
+		animation-timeline: scroll();
+		animation-range: 0 1000px;
+	}
+
+	@keyframes blur {
+		to {
+			box-shadow:
+				0 5px 50px -5px rgba(0, 0, 0, 0.1),
+				0 0 0 1px rgba(0, 0, 0 0.3);
+			background: rgba(0, 0, 0, 0.25);
+			backdrop-filter: blur(10px);
+		}
 	}
 </style>

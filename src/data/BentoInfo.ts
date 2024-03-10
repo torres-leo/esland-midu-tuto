@@ -18,9 +18,7 @@ export const BentoInfo: BentoItem[] = [
 		image: '/images/grefg.webp',
 		content: `<p><strong>Uno de los días más esperados del año</strong> en la comunidad hispanohablante, <strong>con dos grandes hitos concentrados en un mismo directo</strong>. Una alfombra por la que pasarán los mejores streamers del año, luciendo sus mejores galas, momentos antes de saber si son los premiados.</p>
 
-			<p> Y una gala llena de emoción, <strong>con la entrega de premios, conciertos de artistas internacionales, y una gran cantidad de contenido</strong> pensado exclusivamente para la comunidad de streaming hispanohablante.</p>
-
-			<p>No te lo pierdas.</p>`,
+			<p> Y una gala llena de emoción, <strong>con la entrega de premios, conciertos de artistas internacionales, y una gran cantidad de contenido</strong> pensado exclusivamente para la comunidad de streaming hispanohablante.</p>`,
 	},
 	{
 		id: 3,

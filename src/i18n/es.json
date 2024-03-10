@@ -12,5 +12,33 @@
 
 			"Tras dos galas celebradas, una en el Palau de la Música Catalana de Barcelona, y otra en el Auditorio Nacional de la Ciudad de México, solo queda esperar a <strong>la tercera edición en Andorra</strong>."
 		]
+	},
+	"FOOTER": {
+		"copyright": "© ESLAND 2024.",
+		"columns": [
+			{
+				"title": "Legal",
+				"links": [
+					{ "label": "Aviso legal", "path": "/" },
+					{ "label": "Privacidad", "path": "/" },
+					{ "label": "Cookies", "path": "/" }
+				]
+			},
+			{
+				"title": "Web Map",
+				"links": [
+					{ "label": "Home", "path": "/" },
+					{ "label": "Info", "path": "/" },
+					{ "label": "Archivo", "path": "/" }
+				]
+			},
+			{
+				"title": "Política",
+				"links": [
+					{ "label": "Política de privacidad", "path": "/" },
+					{ "label": "Terminos y condiciones", "path": "/" }
+				]
+			}
+		]
 	}
 }

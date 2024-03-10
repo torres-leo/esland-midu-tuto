@@ -1,1 +1,90 @@
-<footer class='py-20 border'>From footer</footer>
+---
+import Logo from '@svgs/logo.astro';
+import Instagram from '@svgs/instagram.astro';
+import Twitter from '@svgs/twitter.astro';
+import Github from '@svgs/github.astro';
+
+import { getI18N } from '@i18n';
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const SOCIALS = [
+	{
+		icon: Instagram,
+		label: 'Instagram page',
+		path: '/',
+	},
+	{
+		icon: Twitter,
+		label: 'Twitter page',
+		path: '/',
+	},
+	{
+		icon: Github,
+		label: 'Github Account',
+		path: '/',
+	},
+];
+---
+
+<footer class='bg-black/40 p-4 py-6 lg:py-8'>
+	<div class='mx-auto w-full max-w-screen-xl'>
+		<div class='md:flex md:justify-between'>
+			<div class='mb-6 md:mb-0 flex flex-col gap-y-6'>
+				<a href='https://flowbite.com/' class='flex items-center'>
+					<Logo class='w-36 -mt-20' />
+				</a>
+				<div class='flex mt-4 sm:justify-center sm:mt-0'>
+					<!-- {
+						SOCIALS.map((item) => (
+							<a href={item.path} target='_blank'>
+								{item.icon} <span>{item.label}</span>{' '}
+							</a>
+						))
+					} -->
+
+					<a href='#' class='text-gray-500 hover:text-white'>
+						<Instagram />
+						<span class='sr-only'>Instagram page</span>
+					</a>
+
+					<a href='#' class='text-gray-500 hover:text-white ms-5'>
+						<Twitter />
+						<span class='sr-only'>Twitter page</span>
+					</a>
+
+					<a
+						href='https://github.com/torres-leo/esland-midu-tuto'
+						target='_blank'
+						class='text-gray-500 hover:text-white ms-5'>
+						<Github />
+						<span class='sr-only'>GitHub account</span>
+					</a>
+				</div>
+			</div>
+			<div class='grid grid-cols-2 gap-8 sm:gap-0 sm:grid-cols-3'>
+				{
+					i18n.FOOTER.columns.map((column) => (
+						<div>
+							<h2 class='mb-6 text-sm font-semibold uppercase text-white'>{column.title}</h2>
+							<ul class='text-gray-400 font-medium'>
+								{column.links.map((link) => (
+									<li class='mb-4 last:mb-0'>
+										<a href={link.path} class='hover:underline'>
+											{link.label}
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
+					))
+				}
+			</div>
+		</div>
+		<hr class='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
+		<div class='sm:flex sm:items-center sm:justify-between'>
+			<span class='text-sm text-gray-500 sm:text-center dark:text-gray-400'>{i18n.FOOTER.copyright}</span>
+		</div>
+	</div>
+</footer>
