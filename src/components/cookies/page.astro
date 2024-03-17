@@ -1,0 +1,127 @@
+---
+import { getI18N } from '@i18n';
+
+import Layout from '@layout';
+
+import CookieTypeDescriptionItem from './item.astro';
+import CookieDescriptionLinkItem from './descriptionLink.astro';
+import CookieLink from './link.astro';
+import SectionContainer from '@components/SectionContainer.astro';
+
+const { currentLocale } = Astro;
+
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title=`${i18n.SEO.COOKIES_TITLE} ${new Date().getFullYear()}` description={i18n.SEO.COOKIES_DESCRIPTION}>
+	<main>
+		<SectionContainer customClass='mt-32'>
+			<div class='grid grid-cols-1 lg:grid-cols-2 gap-10 text-pretty'>
+				<article class='col-span-full'>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.POLICIES.TITLE}
+					</h1>
+					{i18n.COOKIES.POLICIES.DESCRIPTIONS.map((description) => <p>{description}</p>)}
+				</article>
+
+				<article class='col-span-full'>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.WHAT_IS.TITLE}
+					</h1>
+					{i18n.COOKIES.WHAT_IS.DESCRIPTIONS.map((description) => <p>{description}</p>)}
+				</article>
+
+				<article>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.TYPES.TITLE}
+					</h1>
+					{
+						i18n.COOKIES.TYPES.INFO.map((element) => (
+							<CookieTypeDescriptionItem title={element.TITLE} description={element.DESCRIPTION} />
+						))
+					}
+				</article>
+
+				<article>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.BLOCK.TITLE}
+					</h1>
+					{
+						i18n.COOKIES.BLOCK.ITEMS.map((element) => {
+							if (element.PATH)
+								return <CookieDescriptionLinkItem description={element.DESCRIPTION} url={element.PATH} />;
+
+							return <p>{element.DESCRIPTION}</p>;
+						})
+					}
+				</article>
+
+				<article>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.MORE_INFO.TITLE}
+					</h1>
+					{
+						i18n.COOKIES.MORE_INFO.ITEMS.map((item) => (
+							<CookieDescriptionLinkItem description={item.DESCRIPTION} url={item.PATH} />
+						))
+					}
+				</article>
+
+				<article>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.THIRD_PARTY.TITLE}
+					</h1>
+					<p>
+						{i18n.COOKIES.THIRD_PARTY.DESCRIPTION}
+					</p>
+				</article>
+
+				<article class='col-span-full'>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.UPDATES.TITLE}
+					</h1>
+					<p>
+						{i18n.COOKIES.UPDATES.DESCRIPTION}
+					</p>
+				</article>
+
+				<article class='col-span-2'>
+					<h1 class='cookie--title'>
+						{i18n.COOKIES.SITE_COOKIES.TITLE}
+					</h1>
+					<div class='overflow-x-auto'>
+						<table class='w-fulltext-left rtl:text-right'>
+							<thead class='uppercase'>
+								<tr>
+									<th class='px-6 py-3 text-center'>{i18n.COOKIES.SITE_COOKIES.THEAD_NAME}</th>
+									<th class='px-6 py-3 text-center'>{i18n.COOKIES.SITE_COOKIES.THEAD_CADUCITY}</th>
+									<th class='px-6 py-3 text-center'>{i18n.COOKIES.SITE_COOKIES.THEAD_PROVIDER}</th>
+									<th class='px-6 py-3 text-center'>{i18n.COOKIES.SITE_COOKIES.THEAD_FINALITY}</th>
+								</tr>
+							</thead>
+							<tbody>
+								{
+									i18n.COOKIES.SITE_COOKIES.ANALYTICS.map(({ NAME, EXPIRE, PROVIDER, OBJECTIVE, OBJECTIVE_URL }) => (
+										<tr class='odd:bg-[#007aff]/20'>
+											<td class='px-6 py-3 text-center'>{NAME}</td>
+											<td class='px-6 py-3 text-center'>{EXPIRE}</td>
+											<td class='px-6 py-3 text-center'>
+												<CookieLink url={PROVIDER.URL} text={PROVIDER.NAME} />
+											</td>
+											<td class='px-6 py-3 text-center'>
+												<p class='mb-0 text-center'>
+													{OBJECTIVE}
+													{OBJECTIVE_URL.length && <CookieLink url={OBJECTIVE_URL} text='Más información' />}
+												</p>
+											</td>
+										</tr>
+									))
+								}
+							</tbody>
+						</table>
+					</div>
+				</article>
+			</div>
+		</SectionContainer>
+	</main>
+</Layout>

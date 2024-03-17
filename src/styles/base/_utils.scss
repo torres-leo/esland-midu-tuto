@@ -12,4 +12,8 @@
 		@apply xs:px-8;
 		@apply 2xl:px-0;
 	}
+
+	.cookie--title {
+		@apply mb-4 text-wrap text-4xl font-semibold tracking-wide uppercase;
+	}
 }

@@ -1,6 +1,10 @@
 {
 	"SEO_TITLE": "Premis ESLAND 2024 - Celebrant el millor de l'streaming i els creadors de contingut",
 	"SEO_DESCRIPTION": "Descobriu els millors creadors de contingut d'Espanya, Llatinoamèrica i Andorra. Vota pels teus favorits! Celebra la innovació i el talent de Twich, YouTube i més",
+	"SEO": {
+		"COOKIES_TITLE": "Política de cookies - Premis ESLAND",
+		"COOKIES_DESCRIPTION": "La Política de Cookies dels Premis ESLAND informa sobre l'ús de galetes i tecnologies similars al lloc web"
+	},
 	"INTRO_SECTION": {
 		"title": "Benvinguts/des",
 		"title_after_br": "als premis",
@@ -11,6 +15,194 @@
 			"Espanya, Llatinoamèrica i Andorra unides per creadors, creadores i comunitats, per recordar i reviure <strong>alguns dels millors moments de l'any</strong>.",
 
 			"Després de dues gales celebrades, una al Palau de la Música Catalana de Barcelona, ​​i una altra a l'Auditori Nacional de la Ciutat de Mèxic, només queda esperar <strong>la tercera edició a Andorra</strong>."
+		]
+	},
+	"COOKIES": {
+		"POLICIES": {
+			"TITLE": "Política de Cookies",
+			"DESCRIPTIONS": [
+				"Aquesta Política de cookies és part integrant de l'Avís Legal i la Política de Privadesa de www.premiosesland.com (d'ara endavant, Lloc Web), titularitat d'UBIQ S.L.U (d'ara endavant, UBIQ) amb domicili social al carrer Josep Viladomat, 4, Ed Sogas, 1-1 AD700 Escaldes Engordany, i responsable de les Cookies i del tractament de dades personals obtingudes a través de cookies pròpies i de tercers que es fan servir en aquest Lloc Web.",
+				"Aquest Lloc Web utilitza galetes de tercers en concret galetes analítiques de Google Analytics per analitzar l'activitat que realitzen els usuaris quan visiten la web amb finalitats estadístiques.",
+				"Pots acceptar totes les galetes, rebutjar-les o configurar les teves preferències al panell de configuració de galetes. En qualsevol moment podràs revocar el consentiment o modificar les teves preferències de configuració de cookies accedint novament al panell de configuració. Així mateix, pots evitar la descàrrega de cookies o eliminar les instal·lades a través de la configuració del teu navegador, evitant que les cookies s'emmagatzemin al dispositiu. És molt important que llegeixis aquesta política de cookies.",
+				"T'informem de la possibilitat que el rebuig i la desactivació de les cookies pot afectar o dificultar la navegació o la prestació dels serveis oferts en aquest Lloc Web."
+			]
+		},
+		"WHAT_IS": {
+			"TITLE": "Què són les galetes?",
+			"DESCRIPTIONS": [
+				"Les cookies són identificadors alfanumèrics que contenen informació que s'instal·la al dispositiu de l'Usuari i es descarreguen al navegador Web de l'Usuari quan aquest visita i accedeix a una pàgina web. La seva finalitat principal és identificar i reconèixer de manera unívoca el dispositiu de l'Usuari cada cop que accedeix al Lloc Web, a més de millorar la qualitat i oferir un millor ús del Lloc Web.",
+				"Es tracta de petits fitxers de text que queden emmagatzemats al disc dur de l'ordinador i que serveixen per identificar l'Usuari quan es connecta novament al lloc web. El seu objectiu és registrar la visita de l'Usuari i guardar certa informació. ús és comú i freqüent a la web ja que permet a les pàgines funcionar de manera més eficient i aconseguir una major personalització i anàlisi sobre el comportament de l'Usuari."
+			]
+		},
+		"TYPES": {
+			"TITLE": "Quins tipus de galetes existeixen?",
+			"INFO": [
+				{
+					"TITLE": "1.- Segons l'entitat que les gestioni:",
+					"DESCRIPTION": "Les cookies pròpies són aquelles que s'instal·len al terminal de l'Usuari des del domini gestionat pel responsable de la Web i les cookies de tercers són aquelles que s'instal·len al terminal de l'Usuari des d'un domini gestionat per tercers que tracten les dades obtingudes a través de les cookies."
+				},
+				{
+					"TITLE": "2.- Segons el termini de temps que romanguin actives:",
+					"DESCRIPTION": "Les galetes de sessió són aquelles que romanen activades i recapten dades mentre l'usuari accedeix a una web i desapareixen en acabar la sessió, i les galetes permanents són aquelles que segueixen actives i de les quals es recull informació durant un període de temps definit pel responsable de la galeta o fins a la desactivació o eliminació per part de l'Usuari."
+				},
+
+				{
+					"TITLE": "3.- Cookies tècniques:",
+					"DESCRIPTION": "Són aquelles que permeten a l'Usuari navegar a través d'una pàgina web i utilitzar les diferents opcions o serveis que s'ofereixen, com ara controlar el trànsit i la comunicació de dades, identificar la sessió, accedir a parts d'accés restringit, realitzar una sol·licitud d'inscripció, utilitzar elements de seguretat durant la navegació, etc. En ser necessàries per al funcionament del web, aquestes cookies estaran activades i no es podran rebutjar."
+				},
+				{
+					"TITLE": "4.- Cookies de rendiment o operatives:",
+					"DESCRIPTION": "Aquest tipus de Cookie recorda les vostres preferències en la navegació per la Web per la qual cosa no heu de tornar a configurar el servei cada vegada que visiteu la Web. A tall d'exemple, en aquesta tipologia s'inclouen: Configuració de volum de reproductors de vídeo o so. Les velocitats de transmissió de vídeo que siguin compatibles amb el vostre navegador. Aquestes cookies poden desactivar-se per l'Usuari, si bé això pot afectar el bon funcionament dels serveis del Web."
+				},
+				{
+					"TITLE": "5.- Cookies analítiques o de mesura:",
+					"DESCRIPTION": "Són aquelles que permeten fer un seguiment i anàlisi del comportament dels Usuaris de la Web amb la finalitat d'obtenir dades estadístiques i millorar el funcionament de la Web. Cada vegada que un Usuari visita una Web, una eina d'un proveïdor extern genera una galeta analítica a l'ordinador de l'Usuari."
+				},
+				{
+					"TITLE": "6.- Cookies de publicitat:",
+					"DESCRIPTION": "Aquest tipus de galetes permeten obtenir informació sobre la durada o freqüència de visualització de posicions publicitàries, la interacció amb aquestes, o els patrons de navegació i/o comportaments de l'Usuari ja que ajuden a conformar un perfil d'interès publicitari . D'aquesta manera, permeten oferir publicitat afí als interessos de l'Usuari."
+				}
+			]
+		},
+		"BLOCK": {
+			"TITLE": "RECHAZAR, CONFIGURAR, DESHABILITAR O BLOQUEAR LAS COOKIES:",
+			"ITEMS": [
+				{
+					"DESCRIPTION": "Bien en el banner o en el panel de configuración de cookies -siempre activo y accesible- el Usuario tiene la posibilidad de aceptar o rechazar las cookies, así como configurar sus preferencias de aquellas cookies cuyo tratamiento requiera del consentimiento del Usuario."
+				},
+				{
+					"DESCRIPTION": "El Usuario podrá revocar el consentimiento inicialmente otorgado o modificar sus preferencias, en cualquier momento accediendo al panel de configuración."
+				},
+				{
+					"DESCRIPTION": "Asimismo, el Usuario puede bloquear y eliminar las cookies instaladas en su equipo mediante la configuración de las opciones de su navegador."
+				},
+				{
+					"DESCRIPTION": "Se pueden configurar los diferentes navegadores para avisar al Usuario de la recepción de cookies y, si se desea, impedir su instalación en el equipo. Asimismo, el Usuario puede revisar en su navegador qué cookies tiene instaladas y cuál es el plazo de caducidad de las mismas, pudiendo eliminarlas. Puede encontrar información sobre cómo hacerlo, en relación con los navegadores más comunes, en los enlaces que se relacionan a continuación:"
+				},
+				{ "DESCRIPTION": "Chrome:", "PATH": "https://support.google.com/chrome/answer/95647?hl=es" },
+				{
+					"DESCRIPTION": "Para más información sobre la administración de las cookies en Internet Explorer:",
+					"PATH": "http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-questions"
+				},
+				{
+					"DESCRIPTION": "Para más información sobre la administración de las cookies en Mozilla Firefox:",
+					"PATH": "https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias"
+				},
+				{
+					"DESCRIPTION": "Para más información sobre la administración de las cookies en Safari:",
+					"PATH": "http://www.apple.com/es/privacy/use-of-cookies"
+				},
+				{
+					"DESCRIPTION": "Para más información sobre la administración de las cookies en Opera:",
+					"PATH": "http://help.opera.com/Windows/11.50/es-ES/cookies.html"
+				},
+				{
+					"DESCRIPTION": "Si desea dejar de ser seguido por Google Analytics visite:",
+					"PATH": "http://tools.google.com/dlpage/gaoptout"
+				}
+			]
+		},
+		"MORE_INFO": {
+			"TITLE": "Per saber més sobre les galetes",
+			"ITEMS": [
+				{
+					"DESCRIPTION": "Podeu obtenir més informació sobre la publicitat en línia basada en el comportament i la privadesa en línia al següent enllaç:",
+					"PATH": "http://www.youronlinechoices.com/ca"
+				},
+				{
+					"DESCRIPTION": "Protecció de dades de Google Analytics",
+					"PATH": "http://www.google.com/analytics/learn/privacy.html"
+				},
+				{
+					"DESCRIPTION": "Com utilitza Google Analytics les galetes:",
+					"PATH": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=ca#analyticsjs"
+				}
+			]
+		},
+		"THIRD_PARTY": {
+			"TITLE": "Tercers i Transferències Internacionals",
+			"DESCRIPTION": "Pot obtenir informació sobre el tractament realitzat per tercers i possibles transferències de dades a altres països que realitzin aquests tercers identificats en aquesta política, als enllaços que es faciliten en aquesta política de cookies. Els diferents mecanismes de regularització de les transferències internacionals, en cas que n'hi hagi, seran informats pels esmentats tercers."
+		},
+		"UPDATES": {
+			"TITLE": "Actualitzacions i canvis a la política de cookies",
+			"DESCRIPTION": "FAN CONTENT poden modificar aquesta Política de Cookies en funció d'exigències legislatives, reglamentàries, o amb la finalitat d'adaptar aquesta política a les instruccions dictades per l'Agència Espanyola de Protecció de Dades i pel Comitè Europeu de Protecció de Dades , per això s'aconsella als Usuaris que la visitin periòdicament."
+		},
+		"SITE_COOKIES": {
+			"TITLE": "Quines cookies utilitza aquest Lloc WEB?",
+			"THEAD_NAME": "Nom",
+			"THEAD_CADUCITY": "Caducitat",
+			"THEAD_PROVIDER": "Proveïdor",
+			"THEAD_FINALITY": "Finalitat",
+			"ANALYTICS": [
+				{
+					"NAME": "_ga",
+					"EXPIRE": "2 anys",
+					"PROVIDER": {
+						"NAME": "Google",
+						"URL": "https://google.com/"
+					},
+					"OBJECTIVE": "S'utilitza per distingir els usuaris.",
+					"OBJECTIVE_URL": ""
+				},
+				{
+					"NAME": "_gid",
+					"EXPIRE": "24 hores",
+					"PROVIDER": {
+						"NAME": "Google",
+						"URL": "https://google.com/"
+					},
+					"OBJECTIVE": "S'utilitza per distingir els usuaris.",
+					"OBJECTIVE_URL": ""
+				},
+				{
+					"NAME": "_ga_J8PJQBXG7J",
+					"EXPIRE": "2 anys",
+					"PROVIDER": {
+						"NAME": "Google",
+						"URL": "https://google.com/"
+					},
+					"OBJECTIVE": "S'utilitza per mantenir l'estat de la sessió.",
+					"OBJECTIVE_URL": ""
+				},
+				{
+					"NAME": "_gac_gb_J8PJQBXG7J",
+					"EXPIRE": "90 dies",
+					"PROVIDER": {
+						"NAME": "Google",
+						"URL": "https://google.com/"
+					},
+					"OBJECTIVE": "Inclou informació relacionada amb la campanya. Si heu vinculat els vostres comptes de Google Analytics i Google Ads, les etiquetes de conversió al lloc web de Google Ads llegiran aquesta galeta, llevat que la inhabiliteu",
+					"OBJECTIVE_URL": "https://support.google.com/google-ads/answer/7521212?hl=ca"
+				}
+			]
+		}
+	},
+	"FOOTER": {
+		"copyright": "© ESLAND 2024.",
+		"columns": [
+			{
+				"title": "Legal",
+				"links": [
+					{ "label": "Avís legal", "path": "/" },
+					{ "label": "Privadesa", "path": "/" },
+					{ "label": "Cookies", "path": "/ca/cookies" }
+				]
+			},
+			{
+				"title": "Web Map",
+				"links": [
+					{ "label": "Home", "path": "/" },
+					{ "label": "Info", "path": "/" },
+					{ "label": "Arxiu", "path": "/" }
+				]
+			},
+			{
+				"title": "Política",
+				"links": [
+					{ "label": "Política de privadesa", "path": "/" },
+					{ "label": "Termes i condicions", "path": "/" }
+				]
+			}
 		]
 	}
 }
