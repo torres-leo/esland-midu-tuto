@@ -16,6 +16,8 @@
 			"@pages/*": ["pages/*"],
 			"@styles": ["styles.scss"],
 			"@svgs/*": ["assets/svgs/*"]
-		}
+		},
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact"
 	}
 }

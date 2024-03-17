@@ -5,6 +5,7 @@
 		"COOKIES_TITLE": "Política de cookies - Premis ESLAND",
 		"COOKIES_DESCRIPTION": "La Política de Cookies dels Premis ESLAND informa sobre l'ús de galetes i tecnologies similars al lloc web"
 	},
+	"VIDEO_BUTTON": "Revive la 2<sup class='normal-case text-base'>a</sup> edición",
 	"INTRO_SECTION": {
 		"title": "Benvinguts/des",
 		"title_after_br": "als premis",
@@ -175,6 +176,12 @@
 					"OBJECTIVE_URL": "https://support.google.com/google-ads/answer/7521212?hl=ca"
 				}
 			]
+		}
+	},
+	"ARCHIVO_PAGE": {
+		"HERO": {
+			"text": "Edicions anteriors",
+			"btnText": "Reviu la darrera gala"
 		}
 	},
 	"FOOTER": {

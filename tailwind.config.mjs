@@ -10,6 +10,10 @@ export default {
 			...defaultTheme.screens,
 		},
 		extend: {
+			fontFamily: {
+				tomaso: ['Tomaso', 'sans-serif'],
+				jura: ['Jura', 'sans-serif'],
+			},
 			keyframes: {
 				gradient: {
 					'0%': { backgroundPosition: '0% 50%' },
@@ -21,5 +25,14 @@ export default {
 			},
 		},
 	},
-	plugins: [animations],
+	plugins: [
+		animations,
+		({ addComponents }) => {
+			addComponents({
+				'.cp-v': {
+					clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%)',
+				},
+			});
+		},
+	],
 };

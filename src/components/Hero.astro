@@ -1,0 +1,12 @@
+---
+interface Props {
+	style?: string;
+	img: string;
+}
+
+const { style, img } = Astro.props;
+---
+
+<div style={`background-image: url('${img}')`} class='cp-v hero'>
+	<slot />
+</div>
