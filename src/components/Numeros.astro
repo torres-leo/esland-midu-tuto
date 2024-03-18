@@ -1,15 +1,41 @@
 ---
 import { CountUp } from './CountUp';
 import SectionContainer from './SectionContainer.astro';
+
+import { getI18N } from '@i18n';
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <SectionContainer>
 	<h2 class='number__title'>
-		Los <span class="text-transparent gradient font-black animate-gradient'">ESLAND</span> en números
+		{i18n.ARCHIVO_PAGE.COUNT.TITLE._1}
+		<span class="text-transparent gradient font-black animate-gradient'">
+			{i18n.ARCHIVO_PAGE.COUNT.TITLE._2}
+		</span>
+		{i18n.ARCHIVO_PAGE.COUNT.TITLE._3}
 	</h2>
 
 	<div class='number__list'>
-		<div class='number__item'>
+		{
+			i18n.ARCHIVO_PAGE.COUNT.ELEMENTS.map((item) => {
+				const hasDecimal = item.number.toString().includes('.');
+				// console.log(`'${item.number}' hasDecimal:`, hasDecimal);
+
+				return (
+					<div class='number__item'>
+						<p class='number__item--count'>
+							<CountUp client:visible initial={0} final={item.number} decimals={hasDecimal ? 1 : 0} />
+							<span class='-ml-4'>{item.t && item.t}</span>
+						</p>
+						<h3 class='number__item--title'>{item.label}</h3>
+					</div>
+				);
+			})
+		}
+
+		<!-- <div class='number__item'>
 			<p class='number__item--count'><CountUp client:visible initial={0} final={227} /></p>
 			<h3 class='number__item--title'>noticias en prensa</h3>
 		</div>
@@ -22,6 +48,6 @@ import SectionContainer from './SectionContainer.astro';
 		<div class='number__item'>
 			<p class='number__item--count'><CountUp client:visible initial={0} final={3.2} decimals={1} />M&euro;</p>
 			<h3 class='number__item--title'>en medios ganados</h3>
-		</div>
+		</div> -->
 	</div>
 </SectionContainer>

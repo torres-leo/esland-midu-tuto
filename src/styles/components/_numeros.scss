@@ -19,5 +19,10 @@
 		&--title {
 			@apply text-xl text-center uppercase text-gray-300;
 		}
+
+		&--count,
+		&--title {
+			@apply w-full text-center;
+		}
 	}
 }
