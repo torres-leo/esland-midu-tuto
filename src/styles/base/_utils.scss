@@ -17,3 +17,9 @@
 		@apply mb-4 text-wrap text-4xl font-semibold tracking-wide uppercase;
 	}
 }
+
+.gradient {
+	background: linear-gradient(to right, #38bdf8, #6e9ee7, #6ee7b7, #6e9ee7, #6ee7b7, #6e9ee7, #38bdf8);
+	background-clip: text;
+	background-size: 300% 300%;
+}

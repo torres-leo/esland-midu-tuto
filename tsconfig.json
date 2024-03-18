@@ -14,6 +14,7 @@
 			"@layout": ["layouts/Layout.astro"],
 			"@models/*": ["models/*"],
 			"@pages/*": ["pages/*"],
+			"@hooks/*": ["hooks/*"],
 			"@styles": ["styles.scss"],
 			"@svgs/*": ["assets/svgs/*"]
 		},

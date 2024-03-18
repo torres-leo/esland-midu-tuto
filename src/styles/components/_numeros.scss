@@ -1,0 +1,23 @@
+.number {
+	&__title {
+		@apply text-3xl leading-[50px] mb-14 font-tomaso text-center text-balance uppercase tracking-widest;
+		@apply xs:text-5xl xs:leading-[70px] xs:mb-20 xs:tracking-[10px];
+		@apply lg:text-6xl lg:leading-[90px];
+	}
+
+	&__list {
+		@apply grid grid-cols-1 gap-y-10 lg:grid-cols-3;
+	}
+
+	&__item {
+		@apply flex flex-col gap-y-2 items-center justify-start;
+
+		&--count {
+			@apply mb-0 text-7xl font-bold;
+		}
+
+		&--title {
+			@apply text-xl text-center uppercase text-gray-300;
+		}
+	}
+}
